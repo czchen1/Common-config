@@ -25,7 +25,7 @@ Plug 'phaazon/hop.nvim'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-fugitive'
 Plug 'shougo/vimproc.vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'justinmk/vim-sneak'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
@@ -314,25 +314,25 @@ let g:localvimrc_persistent = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => treesitter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",      -- one of "all", "language", or a list of languages
-  ignore_install = { "phpdoc" },
-  highlight = {
-    enable = true,              -- false will disable the whole extension
-  },
-  indent = {
-    enable = true
-  },
-}
-EOF
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+  " ensure_installed = "all",      -- one of "all", "language", or a list of languages
+  " ignore_install = { "phpdoc" },
+  " highlight = {
+    " enable = true,              -- false will disable the whole extension
+  " },
+  " indent = {
+    " enable = true
+  " },
+" }
+" EOF
 
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+" set foldmethod=expr
+" set foldexpr=nvim_treesitter#foldexpr()
 
-lua << EOF
-require("stabilize").setup()
-EOF
+" lua << EOF
+" require("stabilize").setup()
+" EOF
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Wilder
