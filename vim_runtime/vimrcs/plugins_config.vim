@@ -13,7 +13,7 @@ Plug 'lbrayner/vim-rzip'
 Plug 'yegappan/mru'
 Plug 'preservim/nerdcommenter'
 " Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-" Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree'
 " Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'yuezk/vim-js'
 " Plug 'maxmellon/vim-jsx-pretty'
